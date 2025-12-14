@@ -1,0 +1,92 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+    /* BACKGROUND IMAGE SETUP */
+    background-image: url('romantic_bg.jpg'); /* Ensure your image is named this! */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+/* ... (Container and Text Styles remain the same) ... */
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.5);
+    max-width: 550px;
+    width: 90%;
+}
+
+.romantic-text {
+    font-family: 'Great Vibes', cursive;
+    color: #ff1493; 
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px; 
+    margin-top: 20px;
+}
+
+button {
+    font-size: 1.2em;
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Ensure smooth transition for all buttons */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.yes-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+.yes-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.1); /* Standard hover effect */
+}
+
+/* --- NEW CSS CLASS FOR YES BUTTON GROWTH --- */
+.growing-yes {
+    transform: scale(1.5); /* Makes the button 50% larger! */
+    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.6); /* Green glowing shadow */
+}
+/* --- END NEW CSS --- */
+
+.no-btn {
+    background-color: #f44336;
+    color: white;
+    position: absolute;
+}
+
+.try-again-btn {
+    background-color: #ffd700;
+    color: #333;
+}
+.cancel-btn {
+    background-color: #aaa;
+    color: #333;
+}
+
+.hidden {
+    display: none !important;
+}
