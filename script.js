@@ -19,7 +19,7 @@ yesButton.addEventListener('click', () => {
     
     // 2. Set the success message 
     responseMessage.innerHTML = `
-        <span class="romantic-text" style="font-size: 1.5em; display: block; margin-bottom: 10px; color: #4CAF50;">YES! My heart is so happy! Thank you! ❤️</span>
+        <span class="romantic-text" style="font-size: 1.5em; display: block; margin-bottom: 10px; color: #4CAF50;">YES! My heart is so happy! Thank you! ❤️🧸</span>
         <p style="font-family: Arial, sans-serif; font-size: 1em; color: #333;">
             To let me know right away, please send me a text with this secret code:
             <br><strong style="font-size: 1.5em; color: #ff1493;">CODE: ${confirmationCode}</strong>

@@ -44,6 +44,55 @@ body {
     margin-top: 20px;
 }
 
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    
+    /* BACKGROUND IMAGE SETUP */
+    background-image: url('romantic_bg.jpg'); /* Ensure your image is named this! */
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center center;
+    background-attachment: fixed; 
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(255, 105, 180, 0.5);
+    max-width: 550px;
+    width: 90%;
+}
+
+.romantic-text {
+    font-family: 'Great Vibes', cursive;
+    color: #ff1493; 
+    font-size: 3.5em;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+.button-group {
+    /* Ensures buttons sit side-by-side */
+    display: flex; 
+    justify-content: space-around; /* Distributes space evenly */
+    align-items: center;
+    min-height: 80px; 
+    margin-top: 20px;
+    /* Max width prevents the buttons from being too far apart on wide screens */
+    max-width: 400px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
 button {
     font-size: 1.2em;
     padding: 12px 25px;
@@ -51,31 +100,35 @@ button {
     border: none;
     border-radius: 50px;
     cursor: pointer;
-    transition: all 0.3s ease; /* Ensure smooth transition for all buttons */
+    transition: all 0.3s ease;
     font-weight: bold;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Ensure a consistent minimum width for visual balance */
+    min-width: 120px; 
 }
 
+/* --- YES Button Styling --- */
 .yes-btn {
     background-color: #4CAF50;
     color: white;
 }
 .yes-btn:hover {
     background-color: #45a049;
-    transform: scale(1.1); /* Standard hover effect */
+    transform: scale(1.1);
 }
 
-/* --- NEW CSS CLASS FOR YES BUTTON GROWTH --- */
+/* --- YES Button Growth Class --- */
 .growing-yes {
-    transform: scale(1.5); /* Makes the button 50% larger! */
-    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.6); /* Green glowing shadow */
+    transform: scale(1.5); 
+    box-shadow: 0 8px 16px rgba(76, 175, 80, 0.6); 
 }
-/* --- END NEW CSS --- */
 
+/* --- NO Button Styling FIX --- */
 .no-btn {
     background-color: #f44336;
     color: white;
-    position: absolute;
+    /* REMOVED: position: absolute; */
+    /* REMOVED: margin-left to compensate for the absolute position */
 }
 
 .try-again-btn {
